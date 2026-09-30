@@ -1,0 +1,19 @@
+name: Rescore and rebuild index
+
+# Run by hand after a change of the scoring scale on f-cookies.org: every
+# stored report is rescored from its own findings and the index is rebuilt.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rescore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Rescore
+        env:
+          FC_INGEST_KEY: ${{ secrets.FC_INGEST_KEY }}
+        run: curl -fsS --max-time 240 -H "x-fc-key: $FC_INGEST_KEY" https://f-cookies.org/fc-migrate.php

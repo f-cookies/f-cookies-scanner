@@ -155,7 +155,7 @@ async function worker() {
       results.push(result);
       if (opts.dryRun) { console.log(`${label} ${result.error || `${result.cookies.length} cookies, ${Object.keys(result.hosts).length} hosts`}`); continue; }
       const answer = await send(result);
-      if (answer.ok) { tally.sent++; console.log(`${label} privacy ${answer.privacy}/5, lightness ${answer.lightness}/5${answer.browser ? '' : ' (browser check failed: ' + (result.error || 'ended on another site') + ')'}`); }
+      if (answer.ok) { tally.sent++; console.log(`${label} score ${answer.score ?? answer.privacy}/5${answer.browser ? '' : ' (browser check failed: ' + (result.error || 'ended on another site') + ')'}`); }
       else { tally.rejected++; console.log(`${label} not stored: ${answer.error}`); }
     } catch (error) {
       tally.rejected++;
