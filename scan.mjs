@@ -106,13 +106,15 @@ async function visit(browser, url) {
   return result;
 }
 
+// Where the check runs from, shown in each report (FC_ORIGIN names a run from a PC).
+const origin = process.env.FC_ORIGIN || (process.env.GITHUB_ACTIONS ? 'GitHub Actions' : 'local run');
 async function region() {
   try {
     const text = await (await fetch('https://www.cloudflare.com/cdn-cgi/trace', { signal: AbortSignal.timeout(8000) })).text();
     const loc = /^loc=(\w+)/m.exec(text);
-    return `${process.env.GITHUB_ACTIONS ? 'GitHub Actions' : 'local run'}, ${loc ? loc[1] : '??'}`;
+    return `${origin}, ${loc ? loc[1] : '??'}`;
   } catch {
-    return process.env.GITHUB_ACTIONS ? 'GitHub Actions' : 'local run';
+    return origin;
   }
 }
 

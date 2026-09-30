@@ -44,9 +44,18 @@ instead of downloading one, set `FC_BROWSER_CHANNEL=chrome` or `msedge`.
 
 ## Lists
 
-`sites/top.txt` holds the 1000 most popular domains of the
-[Tranco list](https://tranco-list.eu/) (Le Pochat et al., NDSS 2019), and
-`sites/fr-top.txt` the 1000 most popular `.fr` domains of the same list.
+- `sites/us-top.txt` and `sites/fr-top.txt`: the top 1000 web origins in the United
+  States and in France from the [Chrome UX Report](https://developer.chrome.com/docs/crux/)
+  (August 2026), via [zakird/crux-top-lists](https://github.com/zakird/crux-top-lists).
+  CrUX data by Google, licensed CC BY 4.0. Origins are grouped by site, adult sites are
+  removed, and only sites that answer over HTTPS are kept.
+- `sites/top.txt`: the 1000 most popular domains of the [Tranco list](https://tranco-list.eu/)
+  (Le Pochat et al., NDSS 2019), cleaned the same way (infrastructure domains removed).
+- `sites/fr-tld-top.txt`: the 1000 most popular `.fr` domains of the Tranco list.
+
+To scan a list from your own computer (for a European point of view), put
+`FC_INGEST_KEY`, `FC_ORIGIN` and `FC_LOCALE` in a `.env` file, then run
+`node --env-file=.env scan.mjs --list sites/fr-top.txt`.
 
 ## Licence
 
