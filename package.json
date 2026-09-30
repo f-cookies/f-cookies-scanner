@@ -1,0 +1,14 @@
+{
+  "name": "f-cookies-scanner",
+  "version": "0.1.0",
+  "description": "Browser check for f-cookies.org: loads pages in Chromium without consent and reports the cookies and third parties observed.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "scan": "node scan.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

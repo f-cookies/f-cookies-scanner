@@ -1,0 +1,47 @@
+name: Browser scan
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+    inputs:
+      list:
+        description: 'List file, e.g. sites/fr-top.txt (empty = review queue of f-cookies.org)'
+        required: false
+        default: ''
+      offset:
+        description: 'First line of the list to scan'
+        required: false
+        default: '0'
+      limit:
+        description: 'How many sites to scan'
+        required: false
+        default: '1000'
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Scan
+        env:
+          FC_INGEST_KEY: ${{ secrets.FC_INGEST_KEY }}
+          LIST: ${{ inputs.list }}
+          OFFSET: ${{ inputs.offset || '0' }}
+          LIMIT: ${{ inputs.limit || '1000' }}
+        run: |
+          if [ -n "$LIST" ]; then
+            node scan.mjs --list "$LIST" --offset "$OFFSET" --limit "$LIMIT"
+          else
+            node scan.mjs --queue 150
+          fi
