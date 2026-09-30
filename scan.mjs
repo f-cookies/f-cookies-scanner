@@ -75,7 +75,7 @@ async function robotsAllowed(url) {
 }
 
 async function visit(browser, url) {
-  const context = await browser.newContext({ locale: process.env.FC_LOCALE || 'fr-FR', timezoneId: 'Europe/Paris', viewport: { width: 1280, height: 800 } });
+  const context = await browser.newContext({ locale: process.env.FC_LOCALE || 'en-US', viewport: { width: 1280, height: 800 } });
   const page = await context.newPage();
   const hosts = {};
   let requests = 0;

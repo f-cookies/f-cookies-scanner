@@ -44,8 +44,9 @@ instead of downloading one, set `FC_BROWSER_CHANNEL=chrome` or `msedge`.
 
 ## Lists
 
-`sites/fr-top.txt` holds the most popular `.fr` domains of the
-[Tranco list](https://tranco-list.eu/) (Le Pochat et al., NDSS 2019).
+`sites/top.txt` holds the 1000 most popular domains of the
+[Tranco list](https://tranco-list.eu/) (Le Pochat et al., NDSS 2019), and
+`sites/fr-top.txt` the 1000 most popular `.fr` domains of the same list.
 
 ## Licence
 

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       list:
-        description: 'List file, e.g. sites/fr-top.txt (empty = review queue of f-cookies.org)'
+        description: 'List file, e.g. sites/top.txt (empty = review queue of f-cookies.org)'
         required: false
         default: ''
       offset:
