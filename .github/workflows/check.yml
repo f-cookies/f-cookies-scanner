@@ -1,0 +1,35 @@
+name: Browser check (on demand)
+run-name: Check ${{ inputs.url }}
+
+# Started by f-cookies.org when a visitor asks for a full scan: one page,
+# as fast as possible. Uses the Chrome already installed on the runner
+# instead of downloading Chromium. f-cookies.org rate-limits the requests.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'Page to check'
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+      - name: Check
+        env:
+          FC_INGEST_KEY: ${{ secrets.FC_INGEST_KEY }}
+          FC_BROWSER_CHANNEL: chrome
+          URL: ${{ inputs.url }}
+        run: node scan.mjs --concurrency 1 -- "$URL"

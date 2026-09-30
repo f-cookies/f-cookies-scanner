@@ -22,6 +22,7 @@ function parseArgs(argv) {
     else if (a === '--concurrency') opts.concurrency = Number(argv[++i]);
     else if (a === '--out') opts.out = argv[++i];
     else if (a === '--dry-run') opts.dryRun = true;
+    else if (a === '--') { opts.urls.push(...argv.slice(i + 1)); break; }
     else opts.urls.push(a);
   }
   return opts;
