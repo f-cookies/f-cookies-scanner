@@ -16,4 +16,5 @@ jobs:
       - name: Rescore
         env:
           FC_INGEST_KEY: ${{ secrets.FC_INGEST_KEY }}
-        run: curl -fsS --max-time 240 -H "x-fc-key: $FC_INGEST_KEY" https://f-cookies.org/fc-migrate.php
+        run: |
+          curl -fsS --max-time 240 -H "x-fc-key: $FC_INGEST_KEY" https://f-cookies.org/fc-migrate.php
