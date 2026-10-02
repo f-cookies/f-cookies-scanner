@@ -123,9 +123,7 @@ u-strasbg.fr
 mediapart.fr
 vertbaudet.fr
 iarc.fr
-unblog.fr
 abebooks.fr
-online.fr
 cea.fr
 estrepublicain.fr
 sports.fr
@@ -213,7 +211,6 @@ mon-essence.fr
 sorbonne-universite.fr
 alcopa-auction.fr
 culture.fr
-lieuxdedrague.fr
 unicaen.fr
 u-psud.fr
 vogue.fr
@@ -359,7 +356,6 @@ theses.fr
 actionlogement.fr
 paris-sorbonne.fr
 catholique.fr
-chez-alice.fr
 santemagazine.fr
 backmarket.fr
 operadeparis.fr
@@ -433,7 +429,6 @@ marionnaud.fr
 nocibe.fr
 happn.fr
 apec.fr
-over-blog.fr
 univ-toulouse.fr
 insa-lyon.fr
 justice.fr
@@ -695,7 +690,6 @@ myheritage.fr
 modz.fr
 cnc.fr
 idref.fr
-onlc.fr
 francesoir.fr
 newbalance.fr
 i-cad.fr
@@ -779,7 +773,6 @@ monext.fr
 academie-sciences.fr
 okaidi.fr
 perfactive.fr
-espaceplaisir.fr
 ut-capitole.fr
 histoiresroyales.fr
 cnap.fr
@@ -811,7 +804,6 @@ montpellier.fr
 malt.fr
 anti-crise.fr
 gmf.fr
-adameteve.fr
 carrefour-banque.fr
 moneyvox.fr
 musee-rodin.fr
@@ -880,7 +872,6 @@ vtech.fr
 edf-oa.fr
 generali.fr
 doctrine.fr
-balancetanude.fr
 blackstore.fr
 media24.fr
 hentaiforge.fr
@@ -901,14 +892,10 @@ cci-paris-idf.fr
 chronoshop2shop.fr
 yaoiscan.fr
 irisa.fr
-hentai-paradise.fr
 placedescelibataires.fr
-jeune-gay.fr
 langue-au-chat.fr
 ralphlauren.fr
 autoviza.fr
-hentaivost.fr
-hhentai.fr
 streamzo.fr
 cancer.fr
 horaire-maree.fr

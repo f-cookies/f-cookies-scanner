@@ -45,7 +45,6 @@ https://latimes.com/
 https://eventbrite.com/
 https://gallup.com/
 https://paylocity.com/
-https://furaffinity.net/
 https://powerschool.com/
 https://yahoo.com/
 https://shop.app/
@@ -106,7 +105,6 @@ https://screenrant.com/
 https://discord.com/
 https://famousbirthdays.com/
 https://huggingface.co/
-https://weebcentral.com/
 https://runsignup.com/
 https://youtube.com/
 https://duckduckgo.com/
@@ -180,7 +178,6 @@ https://aol.com/
 https://famousfootwear.com/
 https://schwabinstitutional.com/
 https://fotoscapes.com/
-https://aryion.com/
 https://bricklink.com/
 https://grundos.cafe/
 https://nytimes.com/
@@ -215,7 +212,6 @@ https://reuters.com/
 https://therapynotes.com/
 https://dndbeyond.com/
 https://thestreet.com/
-https://janitorai.com/
 https://rateyourmusic.com/
 https://cabelas.com/
 https://easyhomescreen.com/
@@ -284,7 +280,6 @@ https://zola.com/
 https://glassdoor.com/
 https://weather.com/
 https://whatsapp.com/
-https://comix.to/
 https://rottentomatoes.com/
 https://royalcaribbean.com/
 https://coxautoinc.com/
@@ -410,7 +405,6 @@ https://marketwatch.com/
 https://etrade.com/
 https://target.com/
 https://tastingtable.com/
-https://allthefallen.moe/
 https://dailymotion.com/
 https://ultimate-guitar.com/
 https://mlb.com/
@@ -418,7 +412,6 @@ https://chatgpt.com/
 https://collegeboard.org/
 https://ticketmaster.com/
 https://wco.tv/
-https://questionablequesting.com/
 https://kantimehealth.net/
 https://solitaired.com/
 https://kleinisd.net/
@@ -468,7 +461,6 @@ https://carfax.com/
 https://slickdeals.net/
 https://cinemark.com/
 https://seatgeek.com/
-https://leakgallery.com/
 https://tjx.com/
 https://wattpad.com/
 https://matchwithneighbors.com/
@@ -487,9 +479,7 @@ https://kick.com/
 https://sofi.com/
 https://synchrony.com/
 https://genius.com/
-https://funnyjunk.com/
 https://reddit.com/
-https://megapersonals.eu/
 https://alaskaair.com/
 https://teachtci.com/
 https://parentsquare.com/
@@ -612,7 +602,6 @@ https://scienceblog.com/
 https://claude.ai/
 https://dillards.com/
 https://ancestry.com/
-https://character.ai/
 https://freewebnovel.com/
 https://loft.com/
 https://doublelist.com/
@@ -631,7 +620,6 @@ https://snapchat.com/
 https://drugs.com/
 https://creditonebank.com/
 https://swagbucks.com/
-https://simpcity.cr/
 https://timeanddate.com/
 https://www.eyefinity.com/
 https://costcotravel.com/
